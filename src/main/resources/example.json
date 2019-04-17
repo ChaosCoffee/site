@@ -1,0 +1,120 @@
+{
+  "sites": [
+    {
+      "id": "常用推荐",
+      "siteList": [
+        {
+          "address": "https://www.anyknew.com/",
+          "name": "anyknew",
+          "description": "高效率读新闻",
+          "img": "https://www.anyknew.com/favicon.ico"
+        },
+        {
+          "address": "https://tophub.today/",
+          "name": "今日热榜",
+          "description": "汇集微博、百度等信息热榜",
+          "img": "https://tophub.today/favicon.ico"
+        },
+        {
+          "address": "http://www.199it.com/",
+          "name": "199it",
+          "description": "中文互联网资讯中心",
+          "img": "http://www.199it.com/favicon.ico"
+        }
+      ]
+    },
+    {
+      "id": "学习资源",
+      "siteList": [
+        {
+          "address": "https://www.baidu.com/",
+          "name": "百度搜索",
+          "description": "百度一下，你就知道",
+          "img": "https://www.baidu.com/favicon.ico"
+        },
+        {
+          "address": "https://www.google.com/",
+          "name": "Google搜索",
+          "description": "Google search",
+          "img": "../assets/images/logos/google.png"
+        },
+        {
+          "address": "https://translate.google.cn",
+          "name": "Google翻译",
+          "description": "Google translate",
+          "img": "https://translate.google.cn/favicon.ico"
+        },
+        {
+          "address": "http://fanyi.youdao.com/",
+          "name": "有道翻译",
+          "description": "Youdao translate",
+          "img": "http://youdao.com/favicon.ico"
+        },
+        {
+          "address": "https://github.com",
+          "name": "GitHub",
+          "description": "一个面向开源及私有软件项目的托管平台",
+          "img": "https://github.com/favicon.ico"
+        },
+        {
+          "address": "http://www.runoob.com/",
+          "name": "菜鸟课程",
+          "description": "奔跑吧！菜鸟。",
+          "img": "http://www.runoob.com/favicon.ico"
+        },
+        {
+          "address": "http://www.w3school.com.cn/",
+          "name": "w3school",
+          "description": "从基础的 HTML 到 CSS，乃至进阶的 XML、SQL、JS、PHP 和 ASP.NET",
+          "img": "http://www.w3school.com.cn/favicon.ico"
+        },
+        {
+          "address": "https://www.liaoxuefeng.com/",
+          "name": "廖雪峰官方网站",
+          "description": "Git,python3,SQL等教程",
+          "img": "https://www.liaoxuefeng.com/favicon.ico"
+        },
+        {
+          "address": "https://sherlockblaze.com/",
+          "name": "sherlockblaze博客",
+          "description": "看算法大师教你如何学算法",
+          "img": "https://sherlockblaze.com/favicon.ico"
+        }
+      ]
+    },
+    {
+      "id": "常用工具",
+      "siteList": [
+        {
+          "address": "https://jikipedia.com/",
+          "name": "小鸡词典",
+          "description": "最全的网络流行语词典、开放的现代汉语词典。",
+          "img": "https://jikipedia.com/favicon.ico"
+        },
+        {
+          "address": "https://unsplash.com/",
+          "name": "unsplash",
+          "description": "无版权图片素材",
+          "img": "https://unsplash.com/favicon.ico"
+        },
+        {
+          "address": "https://dictionary.cambridge.org/dictionary/english-chinese-simplified/",
+          "name": "cambridge",
+          "description": "剑桥官方字典翻译",
+          "img": "https://dictionary.cambridge.org/favicon.ico"
+        }
+      ]
+    },
+    {
+      "id": "社区资讯",
+      "siteList": [
+        {
+          "address": "https://www.zhihu.com/",
+          "name": "知乎",
+          "description": "知乎,发现更大的世界",
+          "img": "https://www.zhihu.com/favicon.ico"
+        }
+      ]
+    }
+  ]
+}
