@@ -1,0 +1,35 @@
+language: java
+sudo: false
+
+cache:
+  directories:
+  - "$HOME/.m2"
+
+before_script: 
+  - echo 'site-deploy'
+
+jobs:
+  include:
+  - stage: build
+    jdk: oraclejdk8
+    script: 
+    - cd ./site-deploy
+    - mvn compile
+    - mvn exec:java -Dexec.mainClass="org.chaoscoffee.HTMLTemplateUtils"
+    - cd ..
+    - git clone https://${GH_REF} .deploy_git
+    - mv ./site-deploy/result.html ./deploy_git/site/cn/index.html -f
+    - rm -rf site-deploy
+    - cd ./deploy_git
+    - git checkout master
+    - git config user.name "ChaosCoffee"
+    - git add .
+    - git commit -m "update site by travis-ci"
+    - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+branches:
+  only:
+    - dev
+
+env:
+ global:
+   - GH_REF: https://github.com/ChaosCoffee/site.git
