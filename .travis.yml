@@ -13,11 +13,14 @@ jobs:
   - stage: build
     jdk: oraclejdk8
     script: 
+    - ls -l
     - cd ./site-deploy
     - mvn compile
     - mvn exec:java -Dexec.mainClass="org.chaoscoffee.HTMLTemplateUtils"
+    - ls -l
     - cd ..
     - git clone https://${GH_REF} .deploy_git
+    - ls -l
     - mv ./site-deploy/result.html ./deploy_git/site/cn/index.html -f
     - rm -rf site-deploy
     - cd ./deploy_git
@@ -32,4 +35,4 @@ branches:
 
 env:
  global:
-   - GH_REF: https://github.com/ChaosCoffee/site.git
+   - GH_REF: github.com/ChaosCoffee/site.git
