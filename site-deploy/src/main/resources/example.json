@@ -20,6 +20,18 @@
           "name": "199it",
           "description": "中文互联网资讯中心",
           "img": "http://www.199it.com/favicon.ico"
+        },
+        {
+          "address": "http://guozhivip.com/rank/",
+          "name": "果汁排行榜",
+          "description": "聚合各种热搜排行榜排名网站",
+          "img": "http://guozhivip.com/favicon.ico"
+        },
+        {
+          "address": "https://www.asklib.com/",
+          "name": "问答库",
+          "description": "一个非常全面的考试题库搜索网站",
+          "img": "https://www.asklib.com/favicon.ico"
         }
       ]
     },
@@ -102,6 +114,12 @@
           "name": "cambridge",
           "description": "剑桥官方字典翻译",
           "img": "https://dictionary.cambridge.org/favicon.ico"
+        },
+        {
+          "address": "https://zh.wikihow.com/",
+          "name": "WikiHow",
+          "description": "WikiHow 免费提供各种学习，工作，生活小技能，不管学习，工作，生活遇到不会的东西",
+          "img": "https://zh.wikihow.com/favicon.ico"
         }
       ]
     },
@@ -113,6 +131,24 @@
           "name": "知乎",
           "description": "知乎,发现更大的世界",
           "img": "https://www.zhihu.com/favicon.ico"
+        },
+        {
+          "address": "http://bddn.cn/zb.htm",
+          "name": "全国电视直播",
+          "description": "免费全国电视直播",
+          "img": "http://bddn.cn/zb.htm/favicon.ico"
+        },
+        {
+          "address": "http://www.mvyxws.com/",
+          "name": "医学微视",
+          "description": "中国医学科学院健康科普研究中心监制,提供各种医学知识",
+          "img": "http://www.mvyxws.com/favicon.ico"
+        },
+        {
+          "address": "https://readhub.cn/topics",
+          "name": "Readhub",
+          "description": "简洁、高质量互联网新闻网站",
+          "img": "https://readhub.cn/topics/favicon.ico"
         }
       ]
     }
