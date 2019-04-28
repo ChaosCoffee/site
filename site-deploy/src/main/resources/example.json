@@ -149,6 +149,12 @@
           "name": "Readhub",
           "description": "简洁、高质量互联网新闻网站",
           "img": "https://readhub.cn/topics/favicon.ico"
+        },
+        {
+          "address": "https://sspai.com/",
+          "name": "少数派",
+          "description": "少数派致力于更好地运用数字产品或科学方法,帮助用户提升工作效率和生活品质",
+          "img": "https://sspai.com/favicon.ico"
         }
       ]
     }
