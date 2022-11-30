@@ -34,12 +34,12 @@ jobs:
         mvn exec:java -Dexec.mainClass="org.chaoscoffee.HTMLTemplateUtils"
     - name: push code
       run: |
+        git config user.name "ChaosCoffee"
         git clone https://github.com/ChaosCoffee/site.git
         mv ./site-deploy/result.html ./site/cn/index.html -f
         rm -rf site-deploy
         cd ./site
         git checkout master
-        git config user.name "ChaosCoffee"
         git add .
         git commit -m "update site by action"
         git push --force --quiet "https://${GH_TOKEN}@github.com/ChaosCoffee/site.git" master:master
