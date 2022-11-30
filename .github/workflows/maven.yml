@@ -1,0 +1,45 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 8
+      uses: actions/setup-java@v3
+      with:
+        java-version: '8'
+        distribution: 'oracle'
+        cache: maven
+    - name: Build with Maven
+      run: |
+        cd ./site-deploy
+        mvn compile
+        mvn exec:java -Dexec.mainClass="org.chaoscoffee.HTMLTemplateUtils"
+    - name: push code
+      run: |
+        git clone https://github.com/ChaosCoffee/site.git
+        mv ./site-deploy/result.html ./site/cn/index.html -f
+        rm -rf site-deploy
+        cd ./site
+        git checkout master
+        git config user.name "ChaosCoffee"
+        git add .
+        git commit -m "update site by action"
+        git push --force --quiet "https://${GH_TOKEN}@github.com/ChaosCoffee/site.git" master:master
