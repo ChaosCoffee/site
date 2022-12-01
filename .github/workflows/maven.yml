@@ -43,4 +43,4 @@ jobs:
         git checkout master
         git add .
         git commit -m "update site by action"
-        git push --force --quiet "https://${GH_TOKEN}@github.com/ChaosCoffee/site.git" master:master
+        git push
