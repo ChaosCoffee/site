@@ -34,13 +34,13 @@ jobs:
         mvn exec:java -Dexec.mainClass="org.chaoscoffee.HTMLTemplateUtils"
     - name: push code
       run: |
-        git config --global user.email "1104855822@qq.com"
-        git config --global user.name "ChaosCoffee"
-        git clone https://github.com/ChaosCoffee/site.git
+        git config --global user.email ${{secrets.EMAIL}}
+        git config --global user.name ${{secrets.USERNAME}}
+        git clone https://github.com/${{secrets.USERNAME}}/site.git
         mv ./site-deploy/result.html ./site/cn/index.html -f
         rm -rf site-deploy
         cd ./site
         git checkout master
         git add .
         git commit -m "update site by action"
-        git push --force --quiet "https://ChaosCoffee:${{secrets.GH_TOKEN}}@github.com/ChaosCoffee/site.git" master:master
+        git push --force --quiet "https://${{secrets.USERNAME}}:${{secrets.GH_TOKEN}}@github.com/${{secrets.USERNAME}}/site.git" master:master
